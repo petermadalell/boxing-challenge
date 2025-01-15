@@ -3,12 +3,12 @@ To get started with this project, follow these steps:
 
 Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/petermadalell/boxing-challenge.git
 ```
 
 Navigate to the project directory:
 ```bash
-cd <project-directory>
+cd boxing-challenge
 ```
 
 Install dependencies:
