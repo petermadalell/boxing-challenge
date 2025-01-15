@@ -1,4 +1,4 @@
-# Installation Packing System
+# Installation Boxing Challenge
 To get started with this project, follow these steps:
 
 Clone the repository:
