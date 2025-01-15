@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import { Product, Box as BoxType } from '../../utils/types';
 import SelectedBoxes from '../SelectedBoxes';
-import React from 'react';
 
 // Mock the ProductList component
 jest.mock('../ProductList', () => {

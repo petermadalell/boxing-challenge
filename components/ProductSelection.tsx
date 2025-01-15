@@ -4,7 +4,6 @@ import Autocomplete from '@mui/material/Autocomplete';
 import { Product } from '../utils/types';
 import productData from '../utils/products.json';
 import { Stack, Container } from '@mui/material';
-import React from 'react';
 
 type ProductSelectionProps = {
   handleSelectedProduct: (product: Product) => void;

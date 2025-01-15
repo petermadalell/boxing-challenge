@@ -18,7 +18,6 @@ import { selectBox, calculateVolume } from '../utils/packingUtils';
 import { Product, Box as BoxType, AlertType } from '../utils/types';
 import { errorMessages } from '../utils/errorMessages';
 import ProductList from '@/components/ProductList';
-import React from 'react';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#fff',
@@ -44,19 +43,19 @@ export default function App() {
   const isDisabledForm = !newProduct || isMaxQty || isProductDuplicate;
 
   const handleSelectedProduct = (product: Product) => {
-    if (!product) {
-      setAlertMessage([]);
-      return;
-    }
+    if (!product) return;
 
+    setAlertMessage([]);
     const hasDuplicate = products.some(({ id }) => product.id === id);
     setIsProductDuplicate(hasDuplicate);
     if (hasDuplicate) {
-      setAlertMessage((prev) => {
+      setAlertMessage((prev: AlertType[]) => {
         const newAlert: AlertType = {
           severity: 'warning',
           message: errorMessages.DUPLICATE_PRODUCT,
         };
+
+        if (!prev) return [newAlert];
 
         prev = [...prev, newAlert];
 

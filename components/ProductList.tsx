@@ -2,7 +2,6 @@ import { Product } from '../utils/types';
 import { Typography, IconButton } from '@mui/material';
 import Stack, { StackProps } from '@mui/material/Stack';
 import ClearIcon from '@mui/icons-material/Clear';
-import React from 'react';
 
 type ProductListProps = StackProps & {
   product: Product;

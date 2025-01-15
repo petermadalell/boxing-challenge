@@ -1,7 +1,6 @@
 import { Product, Box as BoxType } from '../utils/types';
 import { Stack, Typography } from '@mui/material';
 import ProductList from './ProductList';
-import React from 'react';
 
 type SelectedBoxesProps = {
   selectedBoxes: Map<BoxType, Product[]>;

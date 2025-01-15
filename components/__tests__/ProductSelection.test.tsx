@@ -1,7 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import ProductSelection from '../ProductSelection';
-import React from 'react';
 
 // Mocking the products.json
 jest.mock('../../utils/products.json', () => [

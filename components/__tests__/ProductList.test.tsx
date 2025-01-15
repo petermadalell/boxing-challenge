@@ -3,7 +3,6 @@ import '@testing-library/jest-dom/extend-expect';
 
 import { Product } from '../../utils/types';
 import ProductList from '../ProductList';
-import React from 'react';
 
 describe('ProductList', () => {
   const product: Product = {
